@@ -1,0 +1,246 @@
+.about-section {
+  padding: 150px 20px; /* Reduced side padding for mobile */
+  background-color: #fff; /* Ensure the background is white */
+}
+
+.reviews-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Font size */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the text */
+}
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Active reviews section with 2-3 tiles */
+  .active-reviews-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .active-review-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1 1 calc(30% - 20px); /* Adjust width for responsiveness */
+    margin: 10px;
+    transition: transform 0.3s;
+    position: relative; /* Needed for floating hearts */
+  }
+  
+  .active-review-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .active-review-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .review-text {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* Add background color to the card */
+  .active-review-card:nth-child(odd) {
+    background-color: #ffffff; /* Light grey for odd cards */
+  }
+  
+  .active-review-card:nth-child(even) {
+    background-color: #ffffff; /* Light green for even cards */
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .active-review-card {
+      flex: 1 1 calc(100% - 20px); /* Full width on mobile */
+    }
+  }
+  
+  /* Regular review card styling */
+  .review-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-text {
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  /* Heart like button styles */
+  .like-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .heart-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .like-count {
+    margin-left: 8px;
+    font-size: 16px;
+  }
+  
+  /* Floating hearts animation */
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+  
+  .floating-heart {
+    position: absolute;
+    font-size: 18px;
+    color: #d12336;
+    animation: floatUp 1s ease-out forwards;
+  }
+  
+  /* Adjusting the button styles */
+  .button-row {
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .fancy-button {
+    background-color: #ffb401;
+    border-color: #ffb401;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+  }
+  
+  .fancy-button:hover {
+    background-color: #ffffff;
+    border-color: #d12336;
+  }
+  
+  /* Styling for the hide button */
+  .fancy-hide-button {
+    background-color: #d12336;
+    border-color: #d12336;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px 20px;
+    padding-bottom: 5px;
+  }
+  
+  .fancy-hide-button:hover {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+  }
+  
+  .all-reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .load-more-button {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 16px;
+  }
+  
+
+/* Flying heart animation */
+@keyframes floatUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+  
+  .floating-heart {
+    position: absolute;
+    color: #d12336;
+    font-size: 1.5rem;
+    animation: floatUp 1s ease-in-out forwards;
+  }
+  
+  .like-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .like-count {
+    margin-left: 8px;
+  }
+  .review-header-info {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+  }
+  
+  .review-date {
+    font-size: 14px;
+    margin-left: 8px; /* Adds some space between the stars and the date */
+  }
+
+  .transparent-button {
+    border: 1px solid #1890ff; /* Example color, adjust as needed */
+    background-color: transparent; /* Makes the background transparent */
+    color: #1890ff; /* Text color */
+  }
+  
+  .transparent-button:hover {
+    background-color: rgba(24, 144, 255, 0.1); /* Light blue background on hover */
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 1.25rem; /* Font size */
+      margin-bottom: 20px; /* Space below the heading */
+      text-align: center; /* Center the text */
+  }
+  }
