@@ -53,7 +53,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
       className="l-header" 
       id="header"
       style={{
-        backgroundColor: scrollPosition > 50 ? 'rgba(241, 187, 193, 0.5)' : '#d12336',
+        backgroundColor: scrollPosition > 50 ? '#d12336' : '#d12336',
         transition: 'background-color 0.3s ease',
       }}
     >
@@ -76,11 +76,11 @@ const NavBar = ({ darkMode, setDarkMode }) => {
               <Link to="/" className="nav__link active-link" onClick={closeMenu}>Home</Link>
             </li>
             <li className="nav__item">
-              <Link to="/vastu" className="nav__link" onClick={closeMenu}>Vastu</Link>
+              <Link to="/vastu" className="nav__link" onClick={closeMenu}>Blogs</Link>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <Link to="/form" className="nav__link" onClick={closeMenu}>Consultation</Link>
-            </li>
+            </li> */}
             <li className="nav__item">
               <Button type="primary" style={{ backgroundColor: 'transparent', borderColor: 'white', color: 'white' }}>
                 Contact us
@@ -122,7 +122,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
-              <MenuOutlined style={{ color: '#b58001' }} />
+              <MenuOutlined style={{ color: '#ffffff' }} />
             </motion.div>
           )}
         </div>

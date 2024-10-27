@@ -35,16 +35,16 @@ const CustomFooter = () => (
 
 
     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-      <YoutubeOutlined style={{ fontSize: '24px' }} />
+      <YoutubeOutlined  className="contact-icon-mini" style={{ fontSize: '18px' }} />
     </a>
     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-      <FacebookOutlined style={{ fontSize: '24px' }} />
+      <FacebookOutlined className="contact-icon-mini" style={{ fontSize: '18px' }} />
     </a>
     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-      <InstagramOutlined style={{ fontSize: '24px' }} />
+      <InstagramOutlined className="contact-icon-mini" style={{ fontSize: '18px' }} />
     </a>
     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-      <LinkedinOutlined style={{ fontSize: '24px' }} />
+      <LinkedinOutlined className="contact-icon-mini" style={{ fontSize: '18px' }} />
     </a>
   </div>
 </div>

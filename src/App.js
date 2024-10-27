@@ -22,6 +22,7 @@ import ConsultationsList from './Register/ConsultationsList'
 import heroImage from './assets/img/hero_logo.svg'
 import Intro from './Intro/Intro'
 import FAQ from './FAQ/faq';
+import IntroGIF from './assets/img/FiveElement.gif';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -152,39 +153,39 @@ const App = () => {
               path="/"
               element={
                 <main className="l-main">
-                  <section className="home" id="home">
-                    <motion.div
-                      initial={{ opacity: 0, y: -100 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.8 }}
-                      className="home__container bd-container bd-grid"
-                    >
-                      <div className="home__data">
-                      <h3 className="home__title">
-      Are You Struggling with{' '}
-      <motion.span
-        key={currentWord} // Ensure unique key for animation
-        initial={{ opacity: 0, y: 20 }} // Initial state for entering
-        animate={{ opacity: 1, y: 0 }} // Animate to visible
-        exit={{ opacity: 0, y: -20 }} // Animate out
-        transition={{ duration: 0.5 }} // Duration of the animation
-        style={{ color: '#ffb401' }} // Apply color style here
-      >
-        {currentWord}
-      </motion.span>
-      ?
-    </h3>                     <h3 className="home__subtitle">Tailored Vastu Solutions for a Healthier, Wealthier Life.</h3>
-                        <a href="/form" className="button-consult-mobile"><strong>Book appointment</strong></a>
-                        {/* <div className="parent-element">
-    <Button href="/form" type="primary" shape="round" size="large" className="animated-button">
-      Consult Us now
-    </Button>
-  </div> */}
-                      </div>
-                    </motion.div>
-                    <img src={heroImage} alt="Description" className="right-image" />
+<section className="home" id="home">
 
-                  </section>
+  <motion.div
+    initial={{ opacity: 0, y: -100 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    className="home__container bd-container bd-grid"
+  >
+    <div className="home__data">
+    <img src={IntroGIF} alt="Description" className="home__top" />
+
+      <h3 className="home__title">
+        Are You Struggling with{' '}
+        <motion.span
+          key={currentWord}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5 }}
+          style={{ color: '#ffb401' }}
+        >
+          {currentWord}
+        </motion.span>
+        ?
+      </h3>
+      <h3 className="home__subtitle">Tailored Vastu Solutions for a Healthier, Wealthier Life.</h3>
+      <a href="/form" className="button-consult-mobile"><strong>Book appointment</strong></a>
+    </div>
+    <img src={IntroGIF} alt="Description" className="home__image" />
+
+  </motion.div>
+</section>
+
                   <Intro/>
                   <ImageTileContainer />
 
