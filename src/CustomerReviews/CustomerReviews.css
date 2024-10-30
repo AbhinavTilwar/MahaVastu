@@ -22,12 +22,14 @@
   border-radius: 15px;
   display: grid;
   gap: 10px;
-  grid-template-rows: auto auto 1fr; /* Adjust grid to fit content */
+  grid-template-rows: auto 1fr auto; /* Adjusted to ensure consistent height */
   align-items: start;
   width: 300px;
-  min-height: 300px; /* Set a minimum height */
+  min-height: 350px; /* Set a minimum height to make all cards uniform */
+  max-height: 350px; /* Set a maximum height to ensure alignment */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
+  overflow: hidden; /* Hides overflow in case of content overflow */
 }
 
 .center-card {
@@ -45,18 +47,16 @@
 }
 
 .testimonial-content {
-  position: relative;
-  align-items: flex-start; /* Align items to the top */
-  gap: 10px; /* Space between the icon and text */
+  height: 130px; /* Fixed height for feedback text */
+  overflow: hidden; /* Ensures the text doesn't affect the height of the card */
+  text-overflow: ellipsis;
 }
 
 .quote-icon {
-  color: #FFB401;
   margin-bottom: 5px;
-  height:4rem;
-  width:4rem;
-  flex-shrink: 0; /* Prevents the icon from shrinking */
-
+  height: 4rem;
+  width: 4rem;
+  flex-shrink: 0;
 }
 
 .testimonial-content p {
@@ -148,15 +148,24 @@
     flex-direction: row;
     align-items: center;
   }
+  .testimonial-content {
+    height: 250px; /* Fixed height for feedback text */
+    overflow: hidden; /* Ensures the text doesn't affect the height of the card */
+    text-overflow: ellipsis;
+  }
+  
   .testimonial-card {
     background-color: #FFE8B0;
     padding: 20px;
     border-radius: 10px;
-    display: grid;
+
     /* grid-template-rows: 1fr 1fr 2fr; */
     width: 250px;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 350px; /* Set a minimum height to make all cards uniform */
+    max-height: 500px; /* Set a maximum height to ensure alignment */
+
+    
+    
   }
 }

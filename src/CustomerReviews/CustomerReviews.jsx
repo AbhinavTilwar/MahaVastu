@@ -331,13 +331,13 @@ const testimonials = [
     name: "Neha Verma",
     title: "Interior Designer",
     feedback: "MahaVastu Santulan brought a new perspective to my work as an interior designer. Their recommendations helped me create spaces that not only look beautiful but also radiate positivity and balance. My clients love the results!",
-    image: defaultAvatarMale
+    image: defaultAvatarFemale
   },
   {
     name: "Sandeep Malhotra",
     title: "Business owner",
     feedback: "I was struggling with business losses for years. After following MahaVastu Santulan’s advice, my business started thriving. Their Vastu solutions are practical and effective!",
-    image: defaultAvatarFemale
+    image: defaultAvatarMale
   },
   {
     name: "Meenal Joshi",
@@ -349,13 +349,7 @@ const testimonials = [
     name: "Rakesh Mehra",
     title: "Business owner",
     feedback: "MahaVastu Santulan has completely transformed my business. After following their advice, I noticed an immediate increase in client engagement and overall growth. The positive energy in my office is palpable, and I couldn’t be more grateful!",
-    image: defaultAvatarFemale
-  },
-  {
-    name: "Rakesh Mehra",
-    title: "Business owner",
-    feedback: "MahaVastu Santulan has completely transformed my business. After following their advice, I noticed an immediate increase in client engagement and overall growth. The positive energy in my office is palpable, and I couldn’t be more grateful!",
-    image: defaultAvatarFemale
+    image: defaultAvatarMale
   },
   {
     name: "Priya Sharma",
@@ -367,7 +361,7 @@ const testimonials = [
     name: "Amit Sinha",
     title: "Real Estate Developer",
     feedback: "I consulted MahaVastu Santulan for one of my residential projects, and the results were incredible. The project sold out quicker than expected, and I believe it’s all thanks to the Vastu corrections they suggested. Will definitely seek their guidance for future projects!",
-    image: defaultAvatarFemale
+    image: defaultAvatarMale
   },
 ];
 
