@@ -2,7 +2,7 @@
    
     margin: 0 auto;
     padding: 20px;
-    margin-top: 8%;
+    margin-top: 6%;
     text-align: center;
     font-family: 'Arial', sans-serif;
   }
@@ -43,4 +43,18 @@
 
 
   }
-  
+  @media (max-width: 768px) { /* Adjust the max-width as needed for your design */
+    .vastu-gif {
+      width: 100%; /* Full width on mobile */
+      height: auto;
+      object-fit: cover;
+      object-position: top;
+      clip-path: inset(0 0 10% 0);
+    }
+
+    .vastu-image {
+      width: 60%;
+      height: auto;
+    }
+    
+  }

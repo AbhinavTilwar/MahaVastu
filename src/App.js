@@ -60,7 +60,7 @@ const App = () => {
   }, [darkMode]);
 
   const [currentWord, setCurrentWord] = useState('Health');
-  const words = ['Health', 'Opportunity', 'Money', 'Career', 'Marriage', 'Business', 'Relationship'];
+  const words = ['Health?', 'Opportunity?', 'Money?', 'Career?', 'Marriage?', 'Business?', 'Relationship?'];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -189,7 +189,7 @@ const App = () => {
         >
           {currentWord}
         </motion.span>
-        ?
+        
       </h3>
       <h3 className="home__subtitle">Tailored Vastu Solutions for a Healthier, Wealthier Life.</h3>
       <a href="/form" className="button-consult-mobile"><strong>Book appointment</strong></a>
