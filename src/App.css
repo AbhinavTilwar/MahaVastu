@@ -395,11 +395,13 @@ img{
   margin-bottom: var(--mb-1);
 }
 
-.home__subtitle{
-  font-size: var(--h3-font-size);
+.home__subtitle {
+  font-size: 20px; /* Set the font size to 24px */
+  font-weight: 500; /* Medium bold */
   color: rgb(228, 225, 225);
   margin-bottom: var(--mb-4);
 }
+
 
 
 

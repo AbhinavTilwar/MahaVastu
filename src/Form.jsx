@@ -6,7 +6,7 @@ import { collection, addDoc } from 'firebase/firestore'; // Firestore methods
 import './Form.css'; // Add external CSS for input styling
 import img1 from './assets/img/ele1.png';
 import img2 from './assets/img/ele2.png';
-import img3 from './assets/img/icon.png';
+import img3 from './assets/img/Group 8.png';
 import { SendOutlined } from '@ant-design/icons';
 import ImageTileContainer from './ImageTileContainer-form';
 

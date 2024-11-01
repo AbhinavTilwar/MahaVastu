@@ -102,12 +102,25 @@ const App = () => {
 
   const contactContent = (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <Tooltip title="Chat with us">
-      <Button type="primary" shape="circle" icon={<WhatsAppOutlined />} style={{ marginBottom: '10px', backgroundColor: '#25D366', borderColor: '#25D366' }} />      </Tooltip>
-      <Tooltip title="Call us">
-        <Button type="primary" shape="circle" icon={<PhoneOutlined />} />
-      </Tooltip>
-    </div>
+  <Tooltip title="Chat with us">
+    <Button
+      type="primary"
+      shape="circle"
+      icon={<WhatsAppOutlined />}
+      style={{ marginBottom: '10px', backgroundColor: '#25D366', borderColor: '#25D366' }}
+      onClick={() => window.open('https://wa.me/8668563567', '_blank')}
+    />
+  </Tooltip>
+  <Tooltip title="Call us">
+    <Button
+      type="primary"
+      shape="circle"
+      icon={<PhoneOutlined />}
+      onClick={() => window.open('tel:8668563567')}
+    />
+  </Tooltip>
+</div>
+
   );
 
   const tiles = [

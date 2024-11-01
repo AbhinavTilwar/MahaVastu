@@ -69,6 +69,7 @@
 .cofounder-role {
   font-size: 1.1rem;
   color: #666;
+  margin-top: -2px;
   margin-bottom: 10px;
   font-weight: 500;
   word-wrap: break-word; /* Break long words properly */
